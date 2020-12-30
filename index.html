@@ -10,6 +10,7 @@
 <meta property="og:site_name" content="サイト準備中" />
 <meta property="og:description" content="サイト準備中" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
 <title>準備中 |&emsp;</title>
 <link rel="text/css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,6 +18,24 @@
 <script type=".js"></script>
 </head>
 <style>
+img {
+width: 100% ;
+}
+/*
+@media以外の所は全てのサイズで読み込まれます。
+*/
+@media screen and (min-width:480px) {
+    /*　画面サイズが480pxからはここを読み込む　*/
+p {}
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+p {}
+}
+@media screen and (min-width:1024px) {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+
+}
 body{
   background-color: #191970;
 }
@@ -41,7 +60,7 @@ a:hover,a:active{
   <p class="text__color"><a href="/">サイト準備中</a></p>
 </feader>
 <div>
-  <p>少々お待ちください</p>
+
 </div>
 </body>
 </html>
