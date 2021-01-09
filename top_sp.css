@@ -1,7 +1,31 @@
-@charset "UTF-8";
-@media screen and (min-width:767px){
+img {
+width: 100% ;
+}
+/*
+@media以外の所は全てのサイズで読み込まれます。
+*/
+@media screen and (min-width:480px) {
+    /*　画面サイズが480pxからはここを読み込む　*/
+p {text-align: center;
+   font-size: 100%;
+}
+body{
+  background-color: #000;
+}
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+p {}
 body{
   background-color: #872229;
+}
+}
+@media screen and (min-width:1024px) {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+
+}
+body{
+  background-color: #191970;
 }
 p.text__color{
  text-align: center;
@@ -17,5 +41,4 @@ a{
 }
 a:hover,a:active{
  color: #fff;
-}
 }
