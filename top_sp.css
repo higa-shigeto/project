@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@media screen and (min-width:767px){
+body{
+  background-color: #872229;
+}
+p.text__color{
+ text-align: center;
+ font-size: 500px;
+ color: #fff;
+ font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+a{
+ color: #fff;
+ text-decoration: none;
+ cursor: pointer;
+ margin: 0 5%;
+}
+a:hover,a:active{
+ color: #fff;
+}
+}
