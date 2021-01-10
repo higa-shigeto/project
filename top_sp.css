@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 img {
 width: 100% ;
 }
@@ -8,7 +9,7 @@ body{
 }
 p.text__color{
  text-align: center;
- font-size: 500px;
+ font-size: 250px;
  color: #fff;
  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
