@@ -1,4 +1,5 @@
-<FilesMatch "¥.html$">
-AddType application/x-httpd-php .html
-</FilesMatch>
+<IfModule mime_module>
+    AddType application/x-httpd-php .php
+    AddType application/x-httpd-php-source .phps
+</IfModule>
 AddHandler x-httpd-php7.x .php .phps .html
