@@ -1,5 +1,11 @@
-<IfModule mime_module>
-    AddType application/x-httpd-php .php
-    AddType application/x-httpd-php-source .phps
-</IfModule>
-AddHandler x-httpd-php7.x .php .phps .html
+AuthUserfile /フルパス/.htpasswd
+AuthGroupfile /dev/null
+AuthName "Please enter your ID and password"
+AuthType Basic
+require valid-user
+
+id:tx5Fgi9TurwLE
+higashige_to:tx5Fgi9TurwLE
+
+RewriteEngine on
+RewriteRule ^old.html$ http://example.com/new.html [R=301,L]
