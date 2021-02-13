@@ -4,6 +4,9 @@ body{
   background-color: #191960;
   margin: 0px;
 }
+div,p{
+  margin: 0;
+}
 .right{
   text-align: right;
 }
@@ -12,6 +15,9 @@ body{
 }
 .center{
   text-align: center;
+}
+.font-13{
+  font-size: 13px;
 }
 ul{
   list-style: none;
@@ -24,8 +30,8 @@ ul{
 }
 #topmenu{
   width: 100%;
-  height: 150px;
-  background-color: #fff;
+  height: 130px;
+  background-color: #A0522D;
 }
 .tMenu{
   margin-left: 20px;
@@ -34,15 +40,41 @@ ul{
   position: relative;
   width: 230px;
   height: 50px;
-  top: 50px;
+  top: 60px;
   margin-left: 50px;
 }
 #topMenu{
   display: flex;
 }
-#sidoMenu{
+#sidoMenu {
+  margin: 0px 50px;
   float: right;
-  display: inline;
+}
+#main{
+  display: flex;
+  flex: column;
+}
+.pan{
+  background-color: #2E8B57;
+  width: 100%;
+  height: 20px;
+}
+.pan2{
+  background-color: #fff;
+  width: 10%;
+  height: 20px;
+}
+.main{
+  background-color: #ff0;
+  width: 80%;
+  height: 20px;
+  float: center;
+}
+.sav{
+  background-color: #ff0000;
+  width: 25%;
+  height: 20px;
+  float: center;
 }
 .text__color{
   text-align: center;
@@ -54,7 +86,6 @@ a{
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-  margin: 0 5%;
 }
 a:hover,a:active{
   color: #fff;

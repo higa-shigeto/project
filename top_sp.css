@@ -2,6 +2,9 @@
 body{
   background-color: #872229;
 }
+ul{
+  list-style: none;
+}
 .text__color{
  text-align: center;
  font-size: 250px;
@@ -12,7 +15,6 @@ a{
  color: #fff;
  text-decoration: none;
  cursor: pointer;
- margin: 0 5%;
 }
 a:hover,a:active{
  color: #fff;
