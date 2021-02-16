@@ -117,6 +117,7 @@ ul{
   min-height: 100vh;
   float: center;
   z-index: 0;
+  word-wrap: break-word;
 }
 .text__color{
   text-align: center;
