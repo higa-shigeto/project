@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (min-width:767px){
+@media screen and (min-width:375px){
 body{
   background-color: #872229;
   margin: 0px;
