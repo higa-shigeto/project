@@ -105,8 +105,11 @@ ul{
   border: 1px #fff solid;
 }
 @keyframes sliderAnimation{
+  0%{
+    transform: translateX(0%);
+  }
   100%{
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 .sav{
@@ -143,6 +146,38 @@ a:hover,a:active{
 body{
   background-color: #00f;
   margin: 0px;
+}
+#slider {
+  width: 100%;
+  display: flex;
+  width: min-content;
+  animation: 30s linear infinite sliderAnimation;
+  display: -ms-grid;
+  -ms-grid-columns: min-content;
+}
+#solid{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main1{
+  background-color: #fff;
+  width: 400px;
+  height: 16rem;
+  padding: 20px 40px;
+  position: relative;
+  text-align: center;
+  margin: 20px;
+  border: 1px #fff solid;
+}
+@keyframes sliderAnimation{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
 }
 .pan{
   background-color: #2E8B57;
