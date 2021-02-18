@@ -29,6 +29,11 @@ ul{
 .main-text{
   margin: 0px 5px;
 }
+.retrurn > a{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 #topmenu{
   width: 100%;
   background-color: #fff;
@@ -121,7 +126,7 @@ ul{
   display: inline-flex;
   width: 1.5rem;
   height: 1.5rem;
-  background: white;
+  /* background: white; */
   /* text-decoration: ; */
   align-items: center;
   justify-content: center;
@@ -182,20 +187,19 @@ iframe{
   font-size: 80px;
   color: #fff;
   font-family: 'Noto Serif JP', serif;
+  margin-top: 20px;
 }
 .slideLink a{
-  color: #fff;
   text-decoration: none;
   cursor: pointer;
   padding: 5px;
 }
 a{
-  color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
-a:hover,a:active{
-  color: #fff;
+a:link,a:visited,a:hover,a:active{
+  color: #000;
 }
 /*ここからタブレット用*/
 @media only screen and (min-width:640px) and (max-width:1023px) {
@@ -258,5 +262,9 @@ body{
   font-size: 60px;
   color: #fff;
   font-family: 'Noto Serif JP', serif;
+  margin-top: 20px;
+}
+a:link,a:visited,a:hover,a:active{
+  color: #fff;
 }
 }
