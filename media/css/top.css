@@ -195,6 +195,9 @@ iframe{
   color: #fff;
   font-family: 'Noto Serif JP', serif;
 }
+.pdl-5{
+  padding-left: 10px;
+}
 .slideLink a{
   /* text-decoration: none; */
   cursor: pointer;
@@ -262,6 +265,9 @@ body{
   font-size: 35px;
   color: #fff;
   font-family: 'Noto Serif JP', serif;
+}
+.pdl-5{
+  padding-left: 10px;
 }
 .text__color{
   text-align: center;
