@@ -1,13 +1,23 @@
 @charset "UTF-8";
-
-
-img {
-width: 100% ;
-}
 body{
-  background-color: #191970;
+  background-color: #872229;
+  margin: 0px;
 }
-p.text__color{
+ul{
+  list-style: none;
+}
+div{
+  display: flex;
+}
+#sidoMenu{
+  margin: 0px 5px;
+}
+.pan{
+  background-color: #fff;
+  margin: 0;
+  width: 100%;
+}
+.text__color{
  text-align: center;
  font-size: 250px;
  color: #fff;
@@ -17,7 +27,6 @@ a{
  color: #fff;
  text-decoration: none;
  cursor: pointer;
- margin: 0 5%;
 }
 a:hover,a:active{
  color: #fff;

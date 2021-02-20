@@ -1,0 +1,282 @@
+body{
+  background-color: #191960;
+  margin: 0px;
+}
+div,p{
+  margin: 0;
+}
+.right{
+  text-align: right;
+}
+.left{
+  text-align: left;
+}
+.center{
+  text-align: center;
+}
+.font-13{
+  font-size: 13px;
+}
+ul{
+  list-style: none;
+}
+.pointList{
+  list-style-type: disc;
+}
+.hiraganaList{
+  list-style-type: hiragana;
+}
+.main-text{
+  margin: 0px 5px;
+}
+.retrurn > a{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#topmenu{
+  width: 100%;
+  background-color: #fff;
+  height: 150px;
+}
+.tMenu{
+  margin-left: 20px;
+}
+#toplogo{
+  position: relative;
+  width: 20px;
+  height: 5px;
+  top: 20px;
+  margin-left: 50px;
+}
+#topMenu{
+  display: flex;
+}
+#sidoMenu {
+  margin: 30px 55px;
+  float: right;
+}
+#main{
+  display: flex;
+  flex: column;
+}
+.pan{
+  background-color: #2E8B57;
+  width: 100%;
+  height: 25px;
+  padding-top: 5px;
+  z-index: 0;
+}
+.pan2{
+  background-color: #fff;
+  width: 10%;
+  min-height: 100vh;
+  z-index: 1;
+}
+.pan3{
+  background-color: #2E8B57;
+  width: 100%;
+  height: 20px;
+  z-index: 0;
+}
+.main{
+  background-color: rgba(255,255,255,0);
+  width: 80%;
+  min-height: 100vh;
+  float: center;
+  overflow: hidden;
+}
+#slider {
+  width: 100%;
+  display: flex;
+  width: min-content;
+  animation: 30s linear infinite sliderAnimation;
+  display: -ms-grid;
+  -ms-grid-columns: min-content;
+}
+#solid{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main1{
+  background-color: #fff;
+  width: 400px;
+  height: 16rem;
+  padding: 20px 40px;
+  position: relative;
+  text-align: center;
+  margin: 20px;
+  border-radius: 200px;
+}
+@keyframes sliderAnimation{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+.slidBottun{
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.slidBottun > a{
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  /* background: white; */
+  /* text-decoration: ; */
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slidBottun > a:active {
+  top: 1px;
+}
+.slidBottun > a:focus {
+  background: #000;
+}
+.bottunLinks{
+    margin: 20px;
+    text-align: center;
+}
+.slider{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+iframe{
+  object-fit: cover;
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+}
+.slider > div{
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  margin-right: 50px;
+  border-radius: 20px;
+  background: #fff;
+  transform-origin: center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+.sav{
+  background-color: #fff;
+  width: 10%;
+  min-height: 100vh;
+  float: center;
+  z-index: 0;
+  word-wrap: break-word;
+}
+.text__color{
+  text-align: center;
+  font-size: 80px;
+  color: #fff;
+  font-family: 'Noto Serif JP', serif;
+  margin-top: 20px;
+}
+.font-13{
+  font-size: 13px;
+  color: #fff;
+  font-family: 'Noto Serif JP', serif;
+}
+.pdl-5{
+  padding-left: 10px;
+}
+.slideLink a{
+  /* text-decoration: none; */
+  cursor: pointer;
+  padding: 5px;
+}
+a{
+  /* text-decoration: none; */_
+  cursor: pointer;
+}
+a:link,a:visited,a:hover,a:active{
+  color: #fff;
+}
+/*ここからタブレット用*/
+@media only screen and (min-width:640px) and (max-width:1023px) {
+/*tablet用のcssを記述*/
+body{
+  background-color: #00f;
+  margin: 0px;
+}
+#slider {
+  width: 100%;
+  display: flex;
+  width: min-content;
+  animation: 30s linear infinite sliderAnimation;
+  display: -ms-grid;
+  -ms-grid-columns: min-content;
+}
+#solid{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main1{
+  background-color: #fff;
+  width: 400px;
+  height: 16rem;
+  padding: 20px 40px;
+  position: relative;
+  text-align: center;
+  margin: 20px;
+  border: 1px #fff solid;
+}
+@keyframes sliderAnimation{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+.pan{
+  background-color: #2E8B57;
+  width: 100%;
+  height: 60px;
+  z-index: 0;
+}
+.pan3{
+  background-color: #2E8B57;
+  width: 100%;
+  height: 60px;
+  z-index: 0;
+}
+.font-13{
+  font-size: 35px;
+  color: #fff;
+  font-family: 'Noto Serif JP', serif;
+}
+.pdl-5{
+  padding-left: 10px;
+}
+.text__color{
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  font-family: 'Noto Serif JP', serif;
+  margin-top: 20px;
+}
+a:link,a:visited,a:hover,a:active{
+  color: #fff;
+}
+}
