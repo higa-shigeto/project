@@ -175,6 +175,20 @@ iframe{
   align-items: center;
   font-size: 100px;
 }
+.twitter-emb{
+  position: static;
+  visibility: visible;
+  display: inline-block;
+  width: 80vh;
+  height: 700px;
+  padding: 0px;
+  border: none;
+  max-width: 100%;
+  min-width: 180px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  min-height: 200px;
+}
 .sav{
   background-color: #fff;
   width: 10%;
@@ -278,5 +292,20 @@ body{
 }
 a:link,a:visited,a:hover,a:active{
   color: #fff;
+}
+.twitter-emb{
+  position: static;
+  visibility: visible;
+  display: inline-block;
+  width: 40vh;
+  height: 700px;
+  padding: 0px;
+  border: none;
+  max-width: 100%;
+  min-width: 180px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  min-height: 100px;
+  background-color: #fff;
 }
 }
