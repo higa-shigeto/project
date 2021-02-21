@@ -26,99 +26,85 @@
 <link rel="icon" href="../assets/pics/favicon.jpg" type="image/jpg">
 <link rel="stylesheet" href="../eat/css/top.css">
 <script data-ad-client="ca-pub-5371911770325423" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
 </head>
+<style>
+.eat-content{
+  display: block;
+}
+.acd-check{
+  display: none;
+}
+.acd-label{
+  display: flex;
+  background: #0068b7;
+  color: #fff;
+  display: block;
+  padding: 14px;
+  position: relative;
+  margin: 5px 0px 1px 0px;
+  width: 50vh;
+}
+.acd-label:after{
+  background: #00479d;
+  box-sizing: border-box;
+  content: '>';
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  height: 100%;
+  padding: 15px 21px 0px 22px;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  transform: rotate(90deg);
+  transition: .5s;
+}
+.acd-content{
+  border: 1px solid #333;
+  display: block;
+  height: 0;
+  opacity: 0;
+  padding: 0 10px;
+  width: 51vh;
+  transition: .5s;
+  visibility: hidden;
+}
+.acd-check:checked + .acd-label:after{
+  content: 'ー';
+  transform: rotate(0deg);
+  height: 100%;
+  width: 60px;
+  transition: .5s;
+  text-align: center;
+}
+.acd-check:checked + .acd-label + .acd-content{
+  height: 20vh;
+  opacity: 1;
+  padding: 10px;
+  visibility: visible;
+}
+</style>
 <body>
-<!-- <header> -->
-<!-- <section id="topmenu">
-  <div id="toplogo">
-   <a href="" target="_blank"><img src="" /></a>
+<div class="eat-content">
+  <input id="acd-check1" class="acd-check" type="checkbox">
+  <label class="acd-label" for="acd-check1">クリックで開く1</label>
+  <div class="acd-content">
+    <p>hello.world!</p>
   </div>
-  <div id="sidoMenu">
-    <a href="https://www.youtube.com/channel/UCvpdbYCog5u-THq2wxWLAAA" target="_blank"><img src="../assets/pics/youtube.png" alt="youtube" width="100px"/></a>
+  <input id="acd-check2" class="acd-check" type="checkbox">
+  <label class="acd-label" for="acd-check2">クリックで開く2</label>
+  <div class="acd-content">
+      <p>hello.world2!</p>
   </div>
-  <div id="sidoMenu">
-    <a href="https://www.tiktok.com/@higashige_to_?lang=ja-JP" target="_blank"><img src="../assets/pics/tiktok.png" alt="Tiktok" width="80px"/></a>
+  <input id="acd-check3" class="acd-check" type="checkbox">
+  <label class="acd-label" for="acd-check3">クリックで開く1</label>
+  <div class="acd-content">
+    <p>hello.world!</p>
   </div>
-  <div id="sidoMenu">
-    <a href="https://www.instagram.com/higashige_to_/" target="_blank"><img src="../assets/pics/instagram.png" alt="Instagram" width="80px"/></a>
+  <input id="acd-check4" class="acd-check" type="checkbox">
+  <label class="acd-label" for="acd-check4">クリックで開く2</label>
+  <div class="acd-content">
+      <p>hello.world2!</p>
   </div>
-  <div id="sidoMenu">
-    <a href="https://www.mirrativ.com/" target="_blank"><img src="../assets/pics/mirrativ.png" alt="mirrativ" width="80px"/></a>
-  </div>
-  <div id="sidoMenu">
-    <a href="https://lin.ee/qlrBkh4" target="_blank"><img src="../assets/pics/line.png" alt="line" width="80px"/></a>
-  </div>
-</section>
-</header>
-<div class="pan">
-  <p class="font-13 main-text pdl-5"><a class="retrurn" href="https://www.higashige-to.com">TOP</a>／SNSメディア情報</p>
 </div>
-<div id="main">
-<div class="pan2"></div>
-  <contents class="main">
-    <div id="slider">
-      <div class="main1">
-        <a class="slideLink" href="https://www.youtube.com/channel/UCvpdbYCog5u-THq2wxWLAAA" target="_blank">
-          <span id="slide"><img src="../assets/pics/youtube.png" width="100%"></span>
-        </a>
-      </div>
-      <div class="main1">
-        <a class="slideLink" href="https://www.tiktok.com/@higashige_to_?lang=ja-JP" target="_blank">
-          <span id="slide"><img src="../assets/pics/tiktok.png" width="65%"></span>
-        </a>
-      </div>
-      <div class="main1">
-        <a class="slideLink" href="https://www.instagram.com/higashige_to_/" target="_blank">
-          <span id="slide"><img src="../assets/pics/instagram.png" width="65%"></span>
-        </a>
-      </div>
-      <div class="main1">
-        <a class="slideLink" href="https://www.mirrativ.com/" target="_blank">
-          <span id="slide"><img  style="margin-top: 5px;" src="../assets/pics/mirrativ.png" width="60%"></span>
-        </a>
-      </div>
-      <div class="main1">
-        <a class="slideLink" href="https://lin.ee/qlrBkh4" target="_blank">
-          <span id="slide"><img src="../assets/pics/line.png" width="60%">
-          </span></a>
-        </div>
-    </div>
-    <div class="pan3"><p class="font-13 pdl-5"><a href="https://www.higashige-to.com">TOP</a>／SNSメディア情報</p></div>
-    <div style="text-align: center; margin-top: 10px;">
-      <p class="text__color"><strong>コンテンツの最新情報</strong></p>
-    </div>
-    <div style="text-align: center; margin-top: 20px;">
-      <p class="text__color"><strong>しばらくお待ちください</strong></p>
-    </div> -->
-    <!-- <div class="slidBottun">
-      <a class="bottunLinks" href="#bottun-1">1</a>
-      <a class="bottunLinks" href="#bottun-2">2</a>
-      <a class="bottunLinks" href="#bottun-3">3</a>
-      <a class="bottunLinks" href="#bottun-4">4</a>
-      <a class="bottunLinks" href="#bottun-5">5</a>
-    <div class="slider">
-      <div id="bottun-1">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/wRhygzXelZs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div id="bottun-2">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/wRhygzXelZs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div id="bottun-3">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/wRhygzXelZs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div id="bottun-4">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/wRhygzXelZs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div id="bottun-5">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/wRhygzXelZs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-    </div> -->
-  <!-- </contents>
-<aside class="sav"></aside>
-</div> -->
-
 </body>
 </html>
