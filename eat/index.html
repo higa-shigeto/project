@@ -37,15 +37,15 @@
 .acd-label{
   display: flex;
   background: #0068b7;
-  color: #fff;
+  color: #000;
   display: block;
   padding: 14px;
   position: relative;
   margin: 5px 0px 1px 0px;
-  width: 50vh;
+  width: 30vw;
 }
 .acd-label:after{
-  background: #00479d;
+  background: brga(255,255,255,0);
   box-sizing: border-box;
   content: '>';
   display: block;
@@ -63,13 +63,14 @@
   display: block;
   height: 0;
   opacity: 0;
-  padding: 0 10px;
-  width: 51vh;
+  padding: 0 20px;
+  width: 30vw;
   transition: .5s;
   visibility: hidden;
 }
 .acd-check:checked + .acd-label:after{
   content: 'ー';
+  color: #000;
   transform: rotate(0deg);
   height: 100%;
   width: 60px;
@@ -77,33 +78,40 @@
   text-align: center;
 }
 .acd-check:checked + .acd-label + .acd-content{
-  height: 20vh;
+  height: 73vh;
   opacity: 1;
-  padding: 10px;
+  padding: 13px;
   visibility: visible;
 }
 </style>
 <body>
 <div class="eat-content">
   <input id="acd-check1" class="acd-check" type="checkbox">
-  <label class="acd-label" for="acd-check1">クリックで開く1</label>
+  <label class="acd-label" for="acd-check1">沖縄県</label>
   <div class="acd-content">
-    <p>hello.world!</p>
+    <p>那覇市</p>
+    <p>浦添市</p>
+    <p>南城市</p>
+    <p>豊見城市</p>
+    <p>糸満市</p>
+    <p>八重瀬町</p>
+    <p>西原町</p>
+    <p>南風原町</p>
   </div>
   <input id="acd-check2" class="acd-check" type="checkbox">
-  <label class="acd-label" for="acd-check2">クリックで開く2</label>
+  <label class="acd-label" for="acd-check2">国頭郡</label>
   <div class="acd-content">
-      <p>hello.world2!</p>
+    <p>hello.world2!</p>
   </div>
   <input id="acd-check3" class="acd-check" type="checkbox">
-  <label class="acd-label" for="acd-check3">クリックで開く1</label>
+  <label class="acd-label" for="acd-check3">中頭郡</label>
   <div class="acd-content">
     <p>hello.world!</p>
   </div>
   <input id="acd-check4" class="acd-check" type="checkbox">
-  <label class="acd-label" for="acd-check4">クリックで開く2</label>
+  <label class="acd-label" for="acd-check4">島尻郡</label>
   <div class="acd-content">
-      <p>hello.world2!</p>
+    <p>hello.world2!</p>
   </div>
 </div>
 </body>
