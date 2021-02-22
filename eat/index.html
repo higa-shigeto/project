@@ -44,6 +44,8 @@
   margin: 5px 0px 1px 0px;
   width: 30vw;
   border-bottom: 3px solid #000;
+  border-right: 2px solid #000;
+  cursor: pointer;
 }
 .acd-label:after{
   background: brga(255,255,255,0);
@@ -61,10 +63,10 @@
 }
 .acd-content{
   border: 1px solid #333;
-  display: block;
+  /* display: flex; */
   height: 0;
   opacity: 0;
-  padding: 0 20px;
+  padding: 0 13px;
   width: 30vw;
   transition: .5s;
   visibility: hidden;
@@ -81,8 +83,93 @@
 .acd-check:checked + .acd-label + .acd-content{
   height: 73vh;
   opacity: 1;
+  padding: 14px;
+  visibility: visible;
+}
+.cit-name{
+  margin: 10px 10px;
+}
+.font-12{
+  font-size: 12px;
+}
+.mt5 font-12{
+  margin-top: 5px;
+}
+.mt10{
+  margin-top: 10px;
+}
+.mt20{
+  margin-top: 20px;
+}
+#left{
+  text-align: center;
+  width: 50%;
+  padding: 0px 20px;
+}
+#right{
+  text-align: center;
+  width: 50%;
+  padding: 0px 20px;
+}
+#center{
+  /* display: flex; */
+  text-align: center;
+}
+.cit-cho{
+  display: flex;
+}
+h1,p{
+  margin: 0px;
+}
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
+.acd-label{
+  display: flex;
+  background: #0068b7;
+  color: #000;
+  display: block;
+  padding: 14px;
+  position: relative;
+  margin: 5px 0px 5px 0px;
+  width: 100%;
+  border-bottom: 3px solid #000;
+}
+.acd-content{
+  border: 1px solid #333;
+  /* display: flex; */
+  height: 0;
+  opacity: 0;
+  padding: 0 13px;
+  width: 99.7%;
+  transition: 0.3s;
+  visibility: hidden;
+}
+.acd-check:checked + .acd-label + .acd-content{
+  height: 100%;
+  opacity: 1;
   padding: 13px;
   visibility: visible;
+}
+.cit-name{
+  margin: 10px 10px;
+}
+.font-12{
+  font-size: 30px;
+  padding: 5% 30%;
+}
+#left{
+  text-align: center;
+  width: 50%;
+  padding: 0px 20px;
+}
+#right{
+  text-align: center;
+  width: 50%;
+  padding: 0px 20px;
+}
+#center{
+  /* display: flex; */
+  text-align: center;
+}
 }
 </style>
 <body>
@@ -90,14 +177,60 @@
   <input id="acd-check1" class="acd-check" type="checkbox">
   <label class="acd-label" for="acd-check1">沖縄県</label>
   <div class="acd-content">
-    <p>那覇市</p>
-    <p>浦添市</p>
-    <p>南城市</p>
-    <p>豊見城市</p>
-    <p>糸満市</p>
-    <p>八重瀬町</p>
-    <p>西原町</p>
-    <p>南風原町</p>
+    <div id="center">
+      <h1 class="font-12">市町村</h1>
+    </div>
+    <div class="cit-cho">
+    <div id="left">
+    <div class="cit-name">
+      <p class="mt5 font-12">那覇市</p>
+      <p class="mt5 font-12">浦添市</p>
+      <p class="mt5 font-12">南城市</p>
+      <p class="mt5 font-12">豊見城市</p>
+      <p class="mt5 font-12">糸満市</p>
+      <p class="mt5 font-12">八重瀬町</p>
+      <p class="mt5 font-12">西原町</p>
+      <p class="mt5 font-12">南風原町</p>
+      <p class="mt5 font-12">01</p>
+      <p class="mt5 font-12">02</p>
+      <p class="mt5 font-12">那覇市</p>
+      <p class="mt5 font-12">浦添市</p>
+      <p class="mt5 font-12">南城市</p>
+      <p class="mt5 font-12">豊見城市</p>
+      <p class="mt5 font-12">糸満市</p>
+      <p class="mt5 font-12">八重瀬町</p>
+      <p class="mt5 font-12">西原町</p>
+      <p class="mt5 font-12">南風原町</p>
+      <p class="mt5 font-12">01</p>
+      <p class="mt5 font-12">02</p>
+      <p class="mt5 font-12">03</p>
+    </div>
+    </div>
+    <div id="right">
+    <div class="cit-name">
+      <p class="mt5 font-12">那覇市</p>
+      <p class="mt5 font-12">浦添市</p>
+      <p class="mt5 font-12">南城市</p>
+      <p class="mt5 font-12">豊見城市</p>
+      <p class="mt5 font-12">糸満市</p>
+      <p class="mt5 font-12">八重瀬町</p>
+      <p class="mt5 font-12">西原町</p>
+      <p class="mt5 font-12">南風原町</p>
+      <p class="mt5 font-12">01</p>
+      <p class="mt5 font-12">02</p>
+      <p class="mt5 font-12">那覇市</p>
+      <p class="mt5 font-12">浦添市</p>
+      <p class="mt5 font-12">南城市</p>
+      <p class="mt5 font-12">豊見城市</p>
+      <p class="mt5 font-12">糸満市</p>
+      <p class="mt5 font-12">八重瀬町</p>
+      <p class="mt5 font-12">西原町</p>
+      <p class="mt5 font-12">南風原町</p>
+      <p class="mt5 font-12">01</p>
+      <p class="mt5 font-12">02</p>
+    </div>
+    </div>
+    </div>
   </div>
   <input id="acd-check2" class="acd-check" type="checkbox">
   <label class="acd-label" for="acd-check2">国頭郡</label>
