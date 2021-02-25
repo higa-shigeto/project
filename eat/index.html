@@ -36,6 +36,22 @@
   letter-spacing: 0.2em;
   text-shadow: 0px 5px 7px #000;
 }
+p{
+  font-family: 'Shippori Mincho', serif;
+  letter-spacing: 0.2em;
+  font-size: 30px;
+  /* text-shadow: 0px 5px 7px #000; */
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+a:active,a:hover{
+  text-shadow: 0px 0px 10px #fff;
+}
+a::after,a::before{
+  text-shadow: 0px 0px 10px #fff;
+}
 .eat-topcontent{
   display: block;
   width: 100vw;
@@ -111,7 +127,6 @@
   visibility: hidden;
 }
 #acd-content-1{
-  border: 1px solid #333;
   height: 0;
   opacity: 0;
   margin: 0px 1px;
@@ -169,7 +184,7 @@
 .font-12{
   font-size: 12px;
 }
-.mt5 font-12{
+.mt5{
   margin-top: 5px;
 }
 .mt10{
@@ -177,6 +192,9 @@
 }
 .mt20{
   margin-top: 20px;
+}
+.mtb30{
+  margin: 30px;
 }
 #left{
   text-align: center;
@@ -198,16 +216,25 @@
 h1,p{
   margin: 0px 0px 0px 20px;
 }
+.mb20{
+  margin-bottom: 20px;
+}
 .ulslider{
   position: relative;
   align-items: center;
   width: 50vw;
   margin: 50px 25% 50px 25%;
-
 }
-h1{
-  border-bottom: solid 3px black;
-  text-align: center;
+.title{
+  letter-spacing: 1em;
+  text-shadow: 2px -2px 11px #0eb;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #094;
+  -webkit-box-shodow: 5px 5px 0 #007032;
+  box-shadow: -13px 10px 0 #007032;
+  width: 50%;
+  margin: 10px auto;
 }
 ul{
   display: block;
@@ -273,9 +300,33 @@ li:nth-of-type(5){
 
 }
 @media only screen and (min-width: 375px) and (max-width: 1024px) {
+a{
+  text-decoration: none;
+  color: #000;
+}
+#area-link{
+  color: #fff;
+  text-decoration: none;
+}
+.mb50{
+  margin-bottom: 50px;
+}
 .eat-topcontent{
   display: block;
   width: 100vw;
+}
+.title{
+  letter-spacing: 1em;
+  text-shadow: 2px -2px 11px #007032;
+  padding: 0.5rem 1rem;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #094;
+  -webkit-box-shodow: 5px 5px 0 #007032;
+  box-shadow: -13px 10px 0 #007032;
+  width: 50%;
+  margin: 10px auto;
+  font-size: 25px;
 }
 .acd-check{
   display: none;
@@ -289,8 +340,8 @@ li:nth-of-type(5){
   position: relative;
   margin: 5px 0px 5px 0px;
   width: 97%;
-  border-bottom: 3px solid #000;
-  border-right: 2px solid #000;
+  /* border-bottom: 3px solid #000;
+  border-right: 2px solid #000; */
 }
 #acd-label-1{
   display: flex;
@@ -301,8 +352,8 @@ li:nth-of-type(5){
   position: relative;
   margin: 5px 0px 10px 14%;
   width: 69%;
-  border-bottom: 3px solid #000;
-  border-right: 2px solid #000;
+  /* border-bottom: 3px solid #000;
+  border-right: 2px solid #000; */
 }
 .acd-label:after{
   background: brga(255,255,255,0);
@@ -333,7 +384,7 @@ li:nth-of-type(5){
   transition: .5s;
 }
 .acd-content{
-  border: 1px solid #333;
+  /* border: 1px solid #333; */
   height: 0;
   opacity: 0;
   margin: 0px 1px;
@@ -343,7 +394,6 @@ li:nth-of-type(5){
   visibility: hidden;
 }
 #acd-content-1{
-  border: 1px solid #333;
   height: 0;
   opacity: 0;
   margin: 0px 1px;
@@ -363,7 +413,7 @@ li:nth-of-type(5){
 }
 .acd-check:checked + #acd-label-1:after{
   content: 'ー';
-  padding: 33px 28px 0px 9px;
+  padding: 30px 28px 0px 9px;
   color: #000;
   transform: rotate(0deg);
   height: 100%;
@@ -378,10 +428,13 @@ li:nth-of-type(5){
   padding: 14px;
 }
 .acd-check:checked + #acd-label-1 + #acd-content-1{
-  height: 86%;
+  height: 19%;
   opacity: 1;
-  padding: 14px;
+  margin-left: 15px;
+  margin-top: 25px;
+  padding: 0px;
   visibility: visible;
+  margin-bottom: 25px;
 }
 .acd-check:checked + .acd-label + .acd-content{
   height: 50%;
@@ -390,10 +443,13 @@ li:nth-of-type(5){
   visibility: visible;
 }
 .acd-check:checked + #acd-label-1 + #acd-content-1{
-  height: 50%;
+  height: 19%;
   opacity: 1;
-  padding: 14px;
+  margin-left: 15px;
+  margin-top: 25px;
+  padding: 0px;
   visibility: visible;
+  margin-bottom: 25px;
 }
 .cit-name{
   margin: 10px 10px;
@@ -413,7 +469,6 @@ li:nth-of-type(5){
   padding: 0px 20px;
 }
 #center{
-  /* display: flex; */
   text-align: center;
 }
 }
@@ -438,57 +493,72 @@ li:nth-of-type(5){
   <input id="acd-check1" class="acd-check" type="checkbox">
   <label id="acd-label-1" for="acd-check1"><p class="jp-01" style="color: #fff; position: relative; font-size: 40px;"><strong>沖縄県</strong></p></label>
   <div id="acd-content-1">
-    <div id="center">
-      <h1 class="font-12">市町村</h1>
+    <div id="center" class="mb50">
+      <h1 class="title"><a href="/eat/kunigami" id="area-link">国頭郡<br>(くにがみぐん)</a></h1>
+    </div>
+    <div id="center" class="mb50">
+      <h1 class="title">中頭郡<br>(なかがみぐん)</h1>
+    </div>
+    <div id="center" class="mb50">
+      <h1 class="title">島尻郡<br>(しまじりぐん)</h1>
+    </div>
+    <div id="center" class="mb50">
+      <h1 class="title">市郡<br>(11市)</h1>
+    </div>
+    <div id="center" class="mb50">
+      <h1 class="title">宮古郡<br>(みやこぐん)</h1>
+    </div>
+    <div id="center" class="mb50">
+      <h1 class="title">八重山郡<br>(やえやまぐん)</h1>
     </div>
     <div class="cit-cho">
     <div id="left">
     <div class="cit-name">
-      <p class="mt5 font-12">那覇市</p>
-      <p class="mt5 font-12">浦添市</p>
-      <p class="mt5 font-12">南城市</p>
-      <p class="mt5 font-12">豊見城市</p>
-      <p class="mt5 font-12">糸満市</p>
-      <p class="mt5 font-12">八重瀬町</p>
-      <p class="mt5 font-12">西原町</p>
-      <p class="mt5 font-12">南風原町</p>
-      <p class="mt5 font-12">01</p>
-      <p class="mt5 font-12">02</p>
-      <p class="mt5 font-12">那覇市</p>
-      <p class="mt5 font-12">浦添市</p>
-      <p class="mt5 font-12">南城市</p>
-      <p class="mt5 font-12">豊見城市</p>
-      <p class="mt5 font-12">糸満市</p>
-      <p class="mt5 font-12">八重瀬町</p>
-      <p class="mt5 font-12">西原町</p>
-      <p class="mt5 font-12">南風原町</p>
-      <p class="mt5 font-12">01</p>
-      <p class="mt5 font-12">02</p>
-      <p class="mt5 font-12">03</p>
+      <p class="mtb30"><a href="../eat/nahagurume" target="_blank">那覇市</a></p>
+      <p class="mtb30">浦添市</p>
+      <p class="mtb30">南城市</p>
+      <p class="mtb30">豊見城市</p>
+      <p class="mtb30">糸満市</p>
+      <p class="mtb30">八重瀬町</p>
+      <p class="mtb30">西原町</p>
+      <p class="mtb30">南風原町</p>
+      <p class="mtb30">01</p>
+      <p class="mtb30">02</p>
+      <p class="mtb30">那覇市</p>
+      <p class="mtb30">浦添市</p>
+      <p class="mtb30">南城市</p>
+      <p class="mtb30">豊見城市</p>
+      <p class="mtb30">糸満市</p>
+      <p class="mtb30">八重瀬町</p>
+      <p class="mtb30">西原町</p>
+      <p class="mtb30">南風原町</p>
+      <p class="mtb30">01</p>
+      <p class="mtb30">02</p>
+      <p class="mtb30">03</p>
     </div>
     </div>
     <div id="right">
     <div class="cit-name">
-      <p class="mt5 font-12">那覇市</p>
-      <p class="mt5 font-12">浦添市</p>
-      <p class="mt5 font-12">南城市</p>
-      <p class="mt5 font-12">豊見城市</p>
-      <p class="mt5 font-12">糸満市</p>
-      <p class="mt5 font-12">八重瀬町</p>
-      <p class="mt5 font-12">西原町</p>
-      <p class="mt5 font-12">南風原町</p>
-      <p class="mt5 font-12">01</p>
-      <p class="mt5 font-12">02</p>
-      <p class="mt5 font-12">那覇市</p>
-      <p class="mt5 font-12">浦添市</p>
-      <p class="mt5 font-12">南城市</p>
-      <p class="mt5 font-12">豊見城市</p>
-      <p class="mt5 font-12">糸満市</p>
-      <p class="mt5 font-12">八重瀬町</p>
-      <p class="mt5 font-12">西原町</p>
-      <p class="mt5 font-12">南風原町</p>
-      <p class="mt5 font-12">01</p>
-      <p class="mt5 font-12">02</p>
+      <p class="mtb30">那覇市</p>
+      <p class="mtb30">浦添市</p>
+      <p class="mtb30">南城市</p>
+      <p class="mtb30">豊見城市</p>
+      <p class="mtb30">糸満市</p>
+      <p class="mtb30">八重瀬町</p>
+      <p class="mtb30">西原町</p>
+      <p class="mtb30">南風原町</p>
+      <p class="mtb30">01</p>
+      <p class="mtb30">02</p>
+      <p class="mtb30">那覇市</p>
+      <p class="mtb30">浦添市</p>
+      <p class="mtb30">南城市</p>
+      <p class="mtb30">豊見城市</p>
+      <p class="mtb30">糸満市</p>
+      <p class="mtb30">八重瀬町</p>
+      <p class="mtb30">西原町</p>
+      <p class="mtb30">南風原町</p>
+      <p class="mtb30">01</p>
+      <p class="mtb30">02</p>
     </div>
     </div>
     </div>
