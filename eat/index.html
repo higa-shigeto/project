@@ -239,7 +239,7 @@ h1,p{
   width: 50%;
   margin: 10px auto;
 }
-ul{
+.slider{
   display: block;
   width: 50vw;
   height: 400px;
@@ -250,7 +250,7 @@ ul{
   border-bottom: 0;
   box-sizing: border-box;
 }
-li{
+.slider{
   display: block;
   float: left;
   width: 50vw;
@@ -258,20 +258,20 @@ li{
   transform: translateX(100%);
   position: absolute;
 }
-li:nth-of-type(1){
+.slider:nth-of-type(1){
   transform: translateX(0);
   animation: slide 20s 0s infinite;
 }
-li:nth-of-type(2){
+.slider:nth-of-type(2){
   animation: slide 20s 4s infinite;
 }
-li:nth-of-type(3){
+.slider:nth-of-type(3){
   animation: slide 20s 8s infinite;
 }
-li:nth-of-type(4){
+.slider:nth-of-type(4){
   animation: slide 20s 12s infinite;
 }
-li:nth-of-type(5){
+.slider:nth-of-type(5){
   animation: slide 20s 16s infinite;
 }
 
@@ -310,6 +310,25 @@ a{
 #area-link{
   color: #fff;
   text-decoration: none;
+}
+.japan-menu{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
+  height: 100px;
+  font-size: 34px;
+  padding: 55px 22%;
+}
+.japan-menu > ul{
+  min-width: 8px;
+  flex-basis: 25%;
+  /* background-color: #191970; */
+
+  text-align: center;
+}
+.pages-link{
+  padding-left: 30px;
 }
 .mb50{
   margin-bottom: 50px;
@@ -483,24 +502,9 @@ $(function (){
 )
 </script>
 <body>
-
-
-<div class="ulslider">
-  <h1>おすすめ一覧</h1>
-  <ul>
-    <li style="background-image: url(../assets/pics/favicon.jpg); width: 60vw;">
-      <p class="text-center">いちげんや</p>
-      <p>お店へのアクセス</p>
-    </li>
-    <li style="background-color: #fff;"></li>
-    <li style="background-color: #fff;"></li>
-    <li style="background-color: #fff;"></li>
-    <li style="background-color: #fff;"></li>
-  </ul>
-</div>
 <div class="eat-topcontent">
   <input id="acd-check1" class="acd-check" type="checkbox">
-  <label id="acd-label-1" for="acd-check1"><p class="jp-01" style="color: #fff; position: relative; font-size: 40px;"><strong>沖縄県</strong></p></label>
+  <label id="acd-label-1" for="acd-check1"><p id="okinawa" class="jp-01" style="color: #fff; position: relative; font-size: 40px;"><strong>沖縄県</strong></p></label>
   <div id="acd-content-1">
     <div id="center" class="mb50">
       <h1 class="title"><a href="/eat/okinawa/kunigami" id="area-link">国頭郡<br>(くにがみぐん)</a></h1>
@@ -594,6 +598,19 @@ $(function (){
   <div class="acd-content">
     <p>hello.world!</p>
   </div>
+</div>
+<div class="ulslider">
+  <h1>おすすめ一覧</h1>
+  <ul>
+    <li class="slider" style="background-image: url(../assets/pics/favicon.jpg); width: 60vw;">
+      <p class="text-center">いちげんや</p>
+      <p>お店へのアクセス</p>
+    </li>
+    <li class="slider" style="background-color: #fff;"></li>
+    <li class="slider" style="background-color: #fff;"></li>
+    <li class="slider" style="background-color: #fff;"></li>
+    <li class="slider" style="background-color: #fff;"></li>
+  </ul>
 </div>
 </body>
 </html>
