@@ -1,9 +1,16 @@
 body{
   background-color: #191960;
   margin: 0px;
+  padding-top: 72px;
 }
 div,p{
   margin: 0;
+}
+header{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 9999;
 }
 .right{
   text-align: right;
