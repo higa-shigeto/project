@@ -249,6 +249,7 @@ h1,p{
   margin: 5px 2%;
   border-bottom: 0;
   box-sizing: border-box;
+  background-image: url(../assets/pics/favicon.jpg); width: 100%;
 }
 .slider{
   display: block;
@@ -493,6 +494,11 @@ a{
 #center{
   text-align: center;
 }
+#slider{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
 }
 </style>
 <script>
@@ -502,6 +508,8 @@ $(function (){
 )
 </script>
 <body>
+<header>
+</header>
 <div class="eat-topcontent">
   <input id="acd-check1" class="acd-check" type="checkbox">
   <label id="acd-label-1" for="acd-check1"><p id="okinawa" class="jp-01" style="color: #fff; position: relative; font-size: 40px;"><strong>沖縄県</strong></p></label>
@@ -599,18 +607,21 @@ $(function (){
     <p>hello.world!</p>
   </div>
 </div>
-<div class="ulslider">
-  <h1>おすすめ一覧</h1>
-  <ul>
-    <li class="slider" style="background-image: url(../assets/pics/favicon.jpg); width: 60vw;">
-      <p class="text-center">いちげんや</p>
-      <p>お店へのアクセス</p>
-    </li>
-    <li class="slider" style="background-color: #fff;"></li>
-    <li class="slider" style="background-color: #fff;"></li>
-    <li class="slider" style="background-color: #fff;"></li>
-    <li class="slider" style="background-color: #fff;"></li>
-  </ul>
+<div id="slider">
+  <div class="ulslider">
+    <h1>おすすめ一覧</h1>
+    <ul>
+      <li class="slider">
+        <p class="text-center">いちげんや</p>
+        <p>お店へのアクセス</p>
+      </li>
+      <li class="slider"></li>
+      <li class="slider"></li>
+      <li class="slider"></li>
+      <li class="slider"></li>
+      <li class="slider"></li>
+    </ul>
+  </div>
 </div>
 </body>
 </html>
