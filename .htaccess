@@ -1,2 +1,6 @@
-DirectoryIndex index.php
+DirectoryIndex index.php index.html
+AddType application/x-httpd-php .html
+<FilesMatch "^php.html$">
+AddType application/x-httpd-php .php .html
+</FilesMatch>
 ErrorDocument 404/404.html
